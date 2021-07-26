@@ -1,0 +1,42 @@
+
+<div class="container mt-5">
+    <h2>Classroom</h2>
+    <div class="row mt-5 mb-5">
+        <table class="table table-responsive-lg ">
+            <thead>
+              <tr>
+                <th class="text-center">Id</th>
+                <th class="text-center">Name</th>
+                <th class="text-center">Layout</th>
+                <th class="text-center">Size</th>
+                <th class="text-center">Subject</th>
+                <th class="text-center">View</th>
+                <th class="text-center">Add</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of classList">
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.layout}}</td>
+                <td>{{item.size}}</td>
+                <td>{{item.subject || 'NIL'}}</td>
+                <td>
+                    <a title="View" > 
+                        <i class="fa fa-eye icons pr-2 viewIcn" (click)="view(item)"></i>
+                    </a>
+                </td>
+                <td>
+                    <a title="Add Subject" > 
+                        <i class="fa fa-plus icons pr-2 viewIcn" (click)="AddSubject(item)"></i>
+                    </a>
+                </td>
+              </tr>
+             
+            </tbody>
+          </table>
+    </div>       
+    
+  </div>
+
+  

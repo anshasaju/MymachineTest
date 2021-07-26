@@ -1,0 +1,43 @@
+<div class="div-user">
+        <div class="header"></div>
+        <div class="div-body">
+            <form [formGroup]="subjectForm" (ngSubmit)="onSubmit()">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="name" class="font">Subject</label>
+                                <select
+                                  class="form-control"
+                                  formControlName="subject"
+                                  [ngClass]="{ 'is-invalid': submitted && f.subject.errors }">
+                                    <option  value="{{item.id}}" *ngFor="let item of subjectList">
+                                        {{item.name}}
+                                    </option>
+                                </select>
+                                
+                            </div>
+                           
+                        </div>
+                    </div>    
+                </div>
+                <div class="modal-footer mt-3">
+                    <div class="row">
+                        <div class="col-md-5 col-6">
+                            <button class="btn outline" style="font-size: 15px;" (click)="goBack()">
+                                CANCEL
+                            </button>
+                           
+                        </div>
+                        <div class="col-md-7 col-6">
+                             <button  class="btn themebg " style="color: rgb(14, 13, 13);font-size: 15px;">
+                                 SUBMIT
+                            </button>
+                        </div>
+                    </div>
+                </div>
+               
+            </form>
+        </div>
+    </div>

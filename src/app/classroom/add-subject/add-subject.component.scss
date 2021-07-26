@@ -1,0 +1,33 @@
+
+.div-user{
+    background: #fff;
+    padding: 25px;
+  }
+  textarea{
+    resize: none;
+  }
+  label{
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #6F83A6;
+  margin-top: 15px;
+  font-weight: 400;
+  }
+  .btn{
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  
+  .btn{
+
+    outline: 0px !important;
+  }
+  .btn:focus{
+    box-shadow: none !important;
+    outline: 0px !important;
+  }
+  .code{
+    max-width: 78px !important;
+  }
+  

@@ -1,0 +1,35 @@
+
+<div class="container mt-5">
+    <h2>Subject</h2>
+    <div class="row mt-5 mb-5">
+        <table class="table table-responsive-lg ">
+            <thead>
+              <tr>
+                <th class="text-center">Id</th>
+                <th class="text-center">Name</th>
+                <th class="text-center">credits</th>
+                <th class="text-center">Teacher</th>
+                <th class="text-center">View</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of subjectList">
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.credits}}</td>
+                <td>{{item.teacher}}</td>
+                <td>
+                    <a title="View" > 
+                        <i class="fa fa-eye icons pr-2 viewIcn" (click)="view(item)"></i>
+                    </a>
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+    </div> 
+    
+    
+  </div>
+
+  

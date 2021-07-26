@@ -1,0 +1,50 @@
+<div class="modal-content" ngbAutofocus>
+        <div class="modal-header bg-light text-dark" style="border-color: #b8c5cf;">
+            <h5 class="modal-title font" style="text-transform: capitalize;">Classroom</h5>
+            <button type="button" class="close cls" (click)="close()" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <p class="text-small">Id</p>
+                    <p class="txt-details">
+                        {{data.id}}
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-small">Name</p>
+                    <p class="txt-details"> 
+                        {{data.name | titlecase}} 
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-6">
+                    <p class="text-small">Layout</p>
+                    <p class="txt-details">
+                        {{data.layout }}
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-small">Size</p>
+                    <p class="txt-details">
+                        {{data.size }}
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-6">
+                    <p class="text-small">Subject</p>
+                    <p class="txt-details">
+                        {{data.subject || 'NIL' }}
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+        </div>
+    </div>

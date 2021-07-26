@@ -1,0 +1,42 @@
+
+
+<div class="container mt-5">
+    <h2>Students</h2>
+    <div class="row mt-5 mb-5">
+        <table class="table table-responsive-lg ">
+            <thead>
+              <tr>
+                <th class="text-center">Id</th>
+                <th class="text-center">Name</th>
+                <th class="text-center">Email</th>
+                <th class="text-center">Age</th>
+                <th class="text-center">View</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of studentList ">
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.age}}</td>
+                <td>
+                    <a title="View" > 
+                        <i class="fa fa-eye icons pr-2 viewIcn" (click)="view(item)"></i>
+                      </a>
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+    </div>     
+    <!-- <div class="row">
+      <div class="page">
+        <pagination-controls id="pg_app11" maxSize="5" directionLinks="true" (pageChange)="page11 = $event"
+          autoHide="true">
+        </pagination-controls>
+      </div>
+    </div>         -->
+    
+  </div>
+
+  

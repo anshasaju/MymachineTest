@@ -1,0 +1,39 @@
+nav {
+    background-color: rgb(205, 219, 226);
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .navbar-brand {
+    padding-left: 20px;
+    color: rgb(36, 32, 32);
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  ul li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  ul li a {
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: 500;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  ul li a.active,
+  ul li a:hover {
+    color: #e63b35;
+    transition: .5s;
+  }
+  
+  .navbar-toggler .fas {
+    color: black !important;
+  }
+  
